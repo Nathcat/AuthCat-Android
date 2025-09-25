@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +15,17 @@
         android:theme="@style/Theme.AuthCat"
         tools:targetApi="31">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.AuthCat" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AuthCat" />
+        <activity
+            android:name=".LoadActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AuthCat">
