@@ -42,7 +42,7 @@ class LoadActivity : ComponentActivity() {
 
                             if (s.hasNextLine()) {
                                 val token = s.nextLine()
-                                println(token)
+
                                 val result = authcat.tokenAuth(token)
 
                                 if (result.result) {
